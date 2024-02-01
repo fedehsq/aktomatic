@@ -1,6 +1,6 @@
 # Aktomatic - Project Setup Guide
 
-## What is Akto
+## What is [Akto](https://www.akto.io/)
 Akto is an instant, open source API security platform that takes only 60 secs to get started.  
 Akto is used by security teams to maintain a continuous inventory of APIs, test APIs for vulnerabilities and find runtime issues.  
 Akto offers coverage for all OWASP top 10 and HackerOne Top 10 categories including BOLA, authentication, SSRF, XSS, security configurations, etc.  
