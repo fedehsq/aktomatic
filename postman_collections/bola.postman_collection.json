@@ -1,0 +1,776 @@
+{
+	"info": {
+		"_postman_id": "8172f0fd-dfea-4cce-bc8b-289ae146c177",
+		"name": "bola",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14040983"
+	},
+	"item": [
+		{
+			"name": "idUtente1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic QWJlbDoxMjM0NTY=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/api/v1/utenti/indirizzi?idUtente=1",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"utenti",
+						"indirizzi"
+					],
+					"query": [
+						{
+							"key": "idUtente",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "idUtente1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic QWJlbDoxMjM0NTY=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{ip}}:{{port}}/api/v1/utenti/indirizzi?idUtente=1",
+							"protocol": "http",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"utenti",
+								"indirizzi"
+							],
+							"query": [
+								{
+									"key": "idUtente",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.3"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 10:18:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"77 South Green Clarendon Freeway\",\n        \"comune\": \"Castellero\",\n        \"provincia\": \"FH\",\n        \"cap\": \"58025\",\n        \"panFatturazione\": \"371449635398431\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"124 East Rocky Nobel St.\",\n        \"comune\": \"Tione degli Abruzzi\",\n        \"provincia\": \"OL\",\n        \"cap\": \"46014\",\n        \"panFatturazione\": \"30569309025904\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"371 South Green Fabien Way\",\n        \"comune\": \"Lurago d'Erba\",\n        \"provincia\": \"SN\",\n        \"cap\": \"41025\",\n        \"panFatturazione\": \"38520000023237\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"381 North Green First Avenue\",\n        \"comune\": \"Calanna\",\n        \"provincia\": \"JL\",\n        \"cap\": \"02040\",\n        \"panFatturazione\": \"6011111111111117\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"584 North Green Milton Way\",\n        \"comune\": \"Montaldeo\",\n        \"provincia\": \"SK\",\n        \"cap\": \"95031\",\n        \"panFatturazione\": \"5555555555554444\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"683 South Green New Drive\",\n        \"comune\": \"Arona\",\n        \"provincia\": \"MK\",\n        \"cap\": \"86040\",\n        \"panFatturazione\": \"5105105105105100\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"652 South Green Hague Street\",\n        \"comune\": \"Ponderano\",\n        \"provincia\": \"DM\",\n        \"cap\": \"90014\",\n        \"panFatturazione\": \"4012888888881881\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "idUtente2-path",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic QWJlbDoxMjM0NTY=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/api/v1/utenti/2/indirizzi",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"utenti",
+						"2",
+						"indirizzi"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "idUtente2-path",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic QWJlbDoxMjM0NTY=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{ip}}:{{port}}/api/v1/utenti/2/indirizzi",
+							"protocol": "http",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"utenti",
+								"2",
+								"indirizzi"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.3"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 10:18:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"utente\": \"Erick5\",\n        \"indirizzo\": \"33 South White Cowley Drive\",\n        \"comune\": \"Montemarzino\",\n        \"provincia\": \"MV\",\n        \"cap\": \"35022\",\n        \"panFatturazione\": \"378734493671000\"\n    },\n    {\n        \"utente\": \"Erick5\",\n        \"indirizzo\": \"48 North White New Street\",\n        \"comune\": \"Stignano\",\n        \"provincia\": \"UH\",\n        \"cap\": \"03041\",\n        \"panFatturazione\": \"5610591081018250\"\n    },\n    {\n        \"utente\": \"Erick5\",\n        \"indirizzo\": \"80 East Green Second Drive\",\n        \"comune\": \"Carrè\",\n        \"provincia\": \"DQ\",\n        \"cap\": \"62038\",\n        \"panFatturazione\": \"6011000990139424\"\n    },\n    {\n        \"utente\": \"Erick5\",\n        \"indirizzo\": \"52 South Green First Avenue\",\n        \"comune\": \"Rocchetta e Croce\",\n        \"provincia\": \"VZ\",\n        \"cap\": \"28886\",\n        \"panFatturazione\": \"76009244561\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "idUtente3-path",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic QWJlbDoxMjM0NTY=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/api/v1/utenti/3/indirizzi",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"utenti",
+						"3",
+						"indirizzi"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "idUtente3-path",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic QWJlbDoxMjM0NTY=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{ip}}:{{port}}/api/v1/utenti/3/indirizzi",
+							"protocol": "http",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"utenti",
+								"3",
+								"indirizzi"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.3"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 10:18:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"308 East White Second Drive\",\n        \"comune\": \"San Pietro in Gu\",\n        \"provincia\": \"XU\",\n        \"cap\": \"06064\",\n        \"panFatturazione\": \"378282246310005\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"485 North Green Hague Freeway\",\n        \"comune\": \"Vallelaghi\",\n        \"provincia\": \"KF\",\n        \"cap\": \"53016\",\n        \"panFatturazione\": \"3530111333300000\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"67 South Green Second St.\",\n        \"comune\": \"Rignano Garganico\",\n        \"provincia\": \"LP\",\n        \"cap\": \"98164\",\n        \"panFatturazione\": \"3566002020360505\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"55 South Rocky Hague Blvd.\",\n        \"comune\": \"Vadena\",\n        \"provincia\": \"UW\",\n        \"cap\": \"84096\",\n        \"panFatturazione\": \"4111111111111111\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"96 South Green Clarendon Way\",\n        \"comune\": \"Buronzo\",\n        \"provincia\": \"FN\",\n        \"cap\": \"42032\",\n        \"panFatturazione\": \"4222222222222\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"92 South Green Clarendon Drive\",\n        \"comune\": \"Coazze\",\n        \"provincia\": \"OW\",\n        \"cap\": \"13877\",\n        \"panFatturazione\": \"5019717010103742\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"64 West Green Milton Boulevard\",\n        \"comune\": \"Bolsena\",\n        \"provincia\": \"DN\",\n        \"cap\": \"89833\",\n        \"panFatturazione\": \"6331101999990016\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "idUtente1-path",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic QWJlbDoxMjM0NTY=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/api/v1/utenti/1/indirizzi",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"utenti",
+						"1",
+						"indirizzi"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "idUtente1-path",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic QWJlbDoxMjM0NTY=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{ip}}:{{port}}/api/v1/utenti/1/indirizzi",
+							"protocol": "http",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"utenti",
+								"1",
+								"indirizzi"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.3"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 10:28:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"77 South Green Clarendon Freeway\",\n        \"comune\": \"Castellero\",\n        \"provincia\": \"FH\",\n        \"cap\": \"58025\",\n        \"panFatturazione\": \"371449635398431\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"124 East Rocky Nobel St.\",\n        \"comune\": \"Tione degli Abruzzi\",\n        \"provincia\": \"OL\",\n        \"cap\": \"46014\",\n        \"panFatturazione\": \"30569309025904\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"371 South Green Fabien Way\",\n        \"comune\": \"Lurago d'Erba\",\n        \"provincia\": \"SN\",\n        \"cap\": \"41025\",\n        \"panFatturazione\": \"38520000023237\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"381 North Green First Avenue\",\n        \"comune\": \"Calanna\",\n        \"provincia\": \"JL\",\n        \"cap\": \"02040\",\n        \"panFatturazione\": \"6011111111111117\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"584 North Green Milton Way\",\n        \"comune\": \"Montaldeo\",\n        \"provincia\": \"SK\",\n        \"cap\": \"95031\",\n        \"panFatturazione\": \"5555555555554444\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"683 South Green New Drive\",\n        \"comune\": \"Arona\",\n        \"provincia\": \"MK\",\n        \"cap\": \"86040\",\n        \"panFatturazione\": \"5105105105105100\"\n    },\n    {\n        \"utente\": \"Abel\",\n        \"indirizzo\": \"652 South Green Hague Street\",\n        \"comune\": \"Ponderano\",\n        \"provincia\": \"DM\",\n        \"cap\": \"90014\",\n        \"panFatturazione\": \"4012888888881881\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "idUtente2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic QWJlbDoxMjM0NTY=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/api/v1/utenti/indirizzi?idUtente=2",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"utenti",
+						"indirizzi"
+					],
+					"query": [
+						{
+							"key": "idUtente",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "idUtente2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic QWJlbDoxMjM0NTY=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{ip}}:{{port}}/api/v1/utenti/indirizzi?idUtente=2",
+							"protocol": "http",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"utenti",
+								"indirizzi"
+							],
+							"query": [
+								{
+									"key": "idUtente",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.3"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 10:18:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"utente\": \"Erick5\",\n        \"indirizzo\": \"33 South White Cowley Drive\",\n        \"comune\": \"Montemarzino\",\n        \"provincia\": \"MV\",\n        \"cap\": \"35022\",\n        \"panFatturazione\": \"378734493671000\"\n    },\n    {\n        \"utente\": \"Erick5\",\n        \"indirizzo\": \"48 North White New Street\",\n        \"comune\": \"Stignano\",\n        \"provincia\": \"UH\",\n        \"cap\": \"03041\",\n        \"panFatturazione\": \"5610591081018250\"\n    },\n    {\n        \"utente\": \"Erick5\",\n        \"indirizzo\": \"80 East Green Second Drive\",\n        \"comune\": \"Carrè\",\n        \"provincia\": \"DQ\",\n        \"cap\": \"62038\",\n        \"panFatturazione\": \"6011000990139424\"\n    },\n    {\n        \"utente\": \"Erick5\",\n        \"indirizzo\": \"52 South Green First Avenue\",\n        \"comune\": \"Rocchetta e Croce\",\n        \"provincia\": \"VZ\",\n        \"cap\": \"28886\",\n        \"panFatturazione\": \"76009244561\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "idUtente3",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic QWJlbDoxMjM0NTY=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://{{ip}}:{{port}}/api/v1/utenti/indirizzi?idUtente=3",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"v1",
+						"utenti",
+						"indirizzi"
+					],
+					"query": [
+						{
+							"key": "idUtente",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "idUtente3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic QWJlbDoxMjM0NTY=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{ip}}:{{port}}/api/v1/utenti/indirizzi?idUtente=3",
+							"protocol": "http",
+							"host": [
+								"{{ip}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"utenti",
+								"indirizzi"
+							],
+							"query": [
+								{
+									"key": "idUtente",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.3"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 25 Jan 2024 10:18:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"308 East White Second Drive\",\n        \"comune\": \"San Pietro in Gu\",\n        \"provincia\": \"XU\",\n        \"cap\": \"06064\",\n        \"panFatturazione\": \"378282246310005\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"485 North Green Hague Freeway\",\n        \"comune\": \"Vallelaghi\",\n        \"provincia\": \"KF\",\n        \"cap\": \"53016\",\n        \"panFatturazione\": \"3530111333300000\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"67 South Green Second St.\",\n        \"comune\": \"Rignano Garganico\",\n        \"provincia\": \"LP\",\n        \"cap\": \"98164\",\n        \"panFatturazione\": \"3566002020360505\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"55 South Rocky Hague Blvd.\",\n        \"comune\": \"Vadena\",\n        \"provincia\": \"UW\",\n        \"cap\": \"84096\",\n        \"panFatturazione\": \"4111111111111111\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"96 South Green Clarendon Way\",\n        \"comune\": \"Buronzo\",\n        \"provincia\": \"FN\",\n        \"cap\": \"42032\",\n        \"panFatturazione\": \"4222222222222\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"92 South Green Clarendon Drive\",\n        \"comune\": \"Coazze\",\n        \"provincia\": \"OW\",\n        \"cap\": \"13877\",\n        \"panFatturazione\": \"5019717010103742\"\n    },\n    {\n        \"utente\": \"Janice11\",\n        \"indirizzo\": \"64 West Green Milton Boulevard\",\n        \"comune\": \"Bolsena\",\n        \"provincia\": \"DN\",\n        \"cap\": \"89833\",\n        \"panFatturazione\": \"6331101999990016\"\n    }\n]"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "ip",
+			"value": "192.168.1.130"
+		},
+		{
+			"key": "port",
+			"value": "80"
+		}
+	]
+}
